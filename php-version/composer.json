@@ -1,0 +1,12 @@
+{
+    "name": "root/globoesporte-agenda-futebol-scraping",
+    "authors": [
+        {
+            "name": "Anderson Souza",
+            "email": "andersom.eugenio@gmail.com"
+        }
+    ],
+    "require": {
+        "paquettg/php-html-parser": "^1.7"
+    }
+}
