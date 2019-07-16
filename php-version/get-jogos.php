@@ -1,27 +1,8 @@
 <?php
 require_once("vendor/autoload.php");
+require_once(__DIR__."/helpers.php");
 use PHPHtmlParser\Dom;
 $html = Pharse::file_get_dom('https://globoesporte.globo.com/placar-ge/hoje/jogos.ghtml'); 
-//itera secoes
-//itera jogos
-//pega valores
-function getSecaoAtual($secao){
-    foreach (['passado', 'ao-vivo', 'futuro'] as $atual) {
-        if(stripos($secao->getAttribute('class'),$atual) != false){
-            return $atual;
-        }
-    }
-}
-function htmlNodeMapText($node){
-    return $node->getPlainText();
-}
-
-function HtmlNodeMapAttribute($attr){
-    return function ($node) use ($attr){
-        return $node->getAttribute($attr);
-    };
-}
-
 
 $secoes = $html('.secao-horario');
 foreach ($secoes as $secao ) {
