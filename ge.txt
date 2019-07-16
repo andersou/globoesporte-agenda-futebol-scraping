@@ -1,0 +1,14 @@
+.secao-horario.passado      (Jogos que já passaram)
+.secao-horario.ao-vivo      (Jogos passando)
+.secao-horario.futuro       (Jogos que passarão)
+  # -> header .hora         (Horário)
+  # -> .secao-campeonato
+    -> .card-jogo
+        -> .titulo.local
+            -> span             (Competição)
+            -> time             (Horário)
+        -> .resultado-time-container
+            ->  .nome-completo  (Times[2])
+            ->  .nome-abreviado
+            ->  .escudo
+            ->  .placar         (Placares[2||0])
