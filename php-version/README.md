@@ -24,4 +24,8 @@ Saída: Um json dos próximos jogos nos 5 dias.
 
 Para embarcar no seu prjeto, só usar GEScrapper\Query::get([$data = 'hoje']): array[GEScrapper\Models\Jogo]
 
+## Dependencias
+* Composer
+* Pharse
+
 
