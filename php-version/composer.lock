@@ -4,103 +4,53 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4561ac5f0d911402cea53990df19485e",
-    "content-hash": "75ca6389c99ad43a035d9ab074dcd46d",
+    "hash": "84186130f231a4befb8623875ba1b030",
+    "content-hash": "444f2eddcab83ea1d8249d695c288bed",
     "packages": [
         {
-            "name": "paquettg/php-html-parser",
-            "version": "1.7.0",
+            "name": "ressio/pharse",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/paquettg/php-html-parser.git",
-                "reference": "18845e09831dd0772b88b51e788a4f74c701224c"
+                "url": "https://github.com/ressio/pharse.git",
+                "reference": "51c87b3eba0a5e7871ce9bd7a90fe020a0729d9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paquettg/php-html-parser/zipball/18845e09831dd0772b88b51e788a4f74c701224c",
-                "reference": "18845e09831dd0772b88b51e788a4f74c701224c",
+                "url": "https://api.github.com/repos/ressio/pharse/zipball/51c87b3eba0a5e7871ce9bd7a90fe020a0729d9a",
+                "reference": "51c87b3eba0a5e7871ce9bd7a90fe020a0729d9a",
                 "shasum": ""
             },
             "require": {
-                "paquettg/string-encode": "~0.1.0",
-                "php": ">=5.4"
-            },
-            "require-dev": {
-                "mockery/mockery": "~0.9.0",
-                "phpunit/phpunit": "~4.8.0",
-                "satooshi/php-coveralls": "~0.6.0"
+                "php": ">=5.0.0"
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
-                    "PHPHtmlParser": "src/"
-                }
+                "classmap": [
+                    ""
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "MIT"
+                "GPL",
+                "Artistic"
             ],
             "authors": [
                 {
-                    "name": "Gilles Paquette",
-                    "email": "paquettg@gmail.com",
-                    "homepage": "http://gillespaquette.ca"
+                    "name": "RESS.IO Team",
+                    "homepage": "https://github.com/ressio/pharse"
                 }
             ],
-            "description": "An HTML DOM parser. It allows you to manipulate HTML. Find tags on an HTML page with selectors just like jQuery.",
-            "homepage": "https://github.com/paquettg/php-html-parser",
+            "description": "Fastest PHP HTML Parser",
+            "homepage": "https://github.com/ressio/pharse",
             "keywords": [
+                "HTML5",
                 "dom",
                 "html",
-                "parser"
+                "parser",
+                "php"
             ],
-            "time": "2016-04-06 15:24:40"
-        },
-        {
-            "name": "paquettg/string-encode",
-            "version": "0.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/paquettg/string-encoder.git",
-                "reference": "cf08343649701979f581c1601d01247fa3782439"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/paquettg/string-encoder/zipball/cf08343649701979f581c1601d01247fa3782439",
-                "reference": "cf08343649701979f581c1601d01247fa3782439",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "3.7.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "stringEncode": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Gilles Paquette",
-                    "email": "paquettg@gmail.com",
-                    "homepage": "http://gillespaquette.ca"
-                }
-            ],
-            "description": "Facilitating the process of altering string encoding in PHP.",
-            "homepage": "https://github.com/paquettg/string-encoder",
-            "keywords": [
-                "charset",
-                "encoding",
-                "string"
-            ],
-            "time": "2014-05-29 18:38:09"
+            "time": "2015-03-24 12:48:54"
         }
     ],
     "packages-dev": [],
