@@ -2,7 +2,8 @@
 
 namespace GEScrapper;
 
-use ParseError;
+
+require_once(__DIR__ . "/../helpers.php");
 
 class Parser
 {
@@ -34,7 +35,7 @@ class Parser
                     $jogosParse[] = new Models\Jogo($time_casa, $time_visitante, $hora, $competicao);
                     $placares = ['', ''];
                 }
-                echo ("$competicao \n[$secaoAtual | $hora] > {$nomes[0]} {$placares[0]} x {$placares[1]} {$nomes[1]} \n\n");
+                //echo ("$competicao \n[$secaoAtual | $hora] > {$nomes[0]} {$placares[0]} x {$placares[1]} {$nomes[1]} \n\n");
             }
         }
         //var_dump($jogosParse);
