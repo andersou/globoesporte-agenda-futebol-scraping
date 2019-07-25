@@ -2,7 +2,7 @@
 require_once("vendor/autoload.php");
 $jogos = [];
 $data = new DateTime('now', new DateTimeZone('America/Sao_Paulo'));
-for ($i = 0; $i < 5; $i++) {
+for ($i = 0; $i < 1; $i++) {
     $dataFmt = $data->format(
         'd-m-Y'
     );
@@ -11,4 +11,4 @@ for ($i = 0; $i < 5; $i++) {
     $data->add(new DateInterval('P1D'));
 }
 
-print_r(json_encode($jogos, JSON_UNESCAPED_SLASHES /*| JSON_PRETTY_PRINT*/));
+print_r(json_encode($jogos, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT));

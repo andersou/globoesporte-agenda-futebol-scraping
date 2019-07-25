@@ -8,7 +8,7 @@ require_once(__DIR__ . "/../helpers.php");
 class Parser
 {
 
-    public static function parse($html)
+    public static function parse($html, $data)
     {
         $jogosParse = [];
         $secoes = $html('.secao-horario');
@@ -30,9 +30,9 @@ class Parser
 
                 if (count($placares) == 2) {
 
-                    $jogosParse[] = new Models\Jogo($time_casa, $time_visitante, $hora, $competicao, $placares[0], $placares[1], $secaoAtual);
+                    $jogosParse[] = new Models\Jogo($time_casa, $time_visitante, $data, $hora, $competicao, $placares[0], $placares[1], $secaoAtual);
                 } else {
-                    $jogosParse[] = new Models\Jogo($time_casa, $time_visitante, $hora, $competicao);
+                    $jogosParse[] = new Models\Jogo($time_casa, $time_visitante, $data,  $hora, $competicao);
                     $placares = ['', ''];
                 }
                 //echo ("$competicao \n[$secaoAtual | $hora] > {$nomes[0]} {$placares[0]} x {$placares[1]} {$nomes[1]} \n\n");
